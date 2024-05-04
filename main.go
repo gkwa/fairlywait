@@ -7,8 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Version:", versioninfo.Version)
-	fmt.Println("Revision:", versioninfo.Revision)
-	fmt.Println("DirtyBuild:", versioninfo.DirtyBuild)
-	fmt.Println("LastCommit:", versioninfo.LastCommit)
+    fmt.Println("App Version:", versioninfo.Version)
+    fmt.Println("Git Revision:", versioninfo.Revision) 
+    fmt.Println("Last Commit:", versioninfo.LastCommit)
+    fmt.Println("Dirty Build:", versioninfo.DirtyBuild)
+    fmt.Println("Short Version Info:", versioninfo.Short())
 }
